@@ -1,41 +1,51 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #f9fafc;
-  margin: 60px;
-}
-
-.container {
-  border: 5px dashed #cacfd9;
-  width: 500px;
-  height: 500px;
+  margin: 0;
+  padding: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container :not(:last-child) {
-  margin-right: 20px;
+.main {
+  width: 350px;
+  margin: 40px;
+  padding: 30px 0;
+  background-color: #fcfcfc;
+  box-shadow: -5px -5px 20px #ffffff, 5px 5px 20px #babecc;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.box {
-  border-radius: 15px;
-  color: #f9fafc;
-  padding: 30px;
+.title {
+  margin: 15px auto;
+  font-size: 30px;
+  font-weight: 600;
+  color: #9600ff;
 }
 
-.red {
-  background-color: #e46e80;
-  width: 300px;
+#to-do-list {
+  width: 280px;
+  margin: 0 auto 15px;
+  padding: 0;
+  list-style: none;
 }
 
-.green {
-  background-color: #32b9c1;
-  width: 300px;
+#to-do-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 40px;
+  margin: 8px auto 15px;
+  border-bottom: 1px solid #9600ff;
 }
 
-.blue {
-  background-color: #5195ee;
-  width: 300px;
-  flex-shrink: 0;
+#to-do-list li:hover {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clear {
+  text-decoration: line-through;
 }
